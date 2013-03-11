@@ -1,4 +1,6 @@
-# jquery.SmoothScroll.js
+jquery.smoothScroll.js
+===================
+
 A smooth scrolling plugin for jQuery.
 
 ## What it does
