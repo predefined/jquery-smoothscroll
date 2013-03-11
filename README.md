@@ -5,7 +5,7 @@ A smooth scrolling plugin for jQuery.
 
 ## What it does
 This simple jQuery plugin extends jQuery.
-The new 'smoothScrollTop' command makes the browser scroll to the specified element. This will then be a smooth transition.
+The new <code>smoothScrollTop</code> command makes the browser scroll to the specified element. This will then be a smooth transition.
 
 ## How to use
 
