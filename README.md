@@ -1,3 +1,4 @@
+#yolo #hipster
 jquery.smoothScroll.js
 ===================
 
