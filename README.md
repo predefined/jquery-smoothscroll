@@ -1,15 +1,12 @@
-#yolo #hipster
 jquery.smoothScroll.js
 ===================
 
-A smooth scrolling plugin for jQuery.
+A jQuery plugin for smooth page scrolling.
 
 ## What it does
-This simple jQuery plugin extends jQuery.
-The new <code>smoothScrollTop</code> command makes the browser scroll to the specified element. This will then be a smooth transition.
+SmoothScroll introduces the <code>smoothScrollTop</code> function that makes the browser smoothly scroll to the specified element.
 
 ## How to use
-
 If you have a webpage you want to scroll on, simply add jQuery and the plugin to your references.
 If you did that, simply get the element you want to scroll to and execute <code>smoothScrollTop();</code>.
 
@@ -19,5 +16,5 @@ Examples:
 - **For further options, consider the file itself.**
 
 ## How it came into being
-When developing our website, we needed a smooth scrolling plugin but none was working. That's why we decided to develop our own jQuery plugin for that.
+When developing our own website we needed a smooth scrolling plugin. None of those we found was actually working. That's why we decided to develop our own jQuery plugin for that.  
 Done by [@sgade](http://github.com/sgade). 
