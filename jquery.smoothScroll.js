@@ -1,4 +1,4 @@
-/* 
+/*! 
  * Predefined - jquery.smoothScroll.js
  * Copyright (c) 2013 Predefined
  * */
@@ -70,6 +70,12 @@
             _internals.debugIf(settings.debug, "Scrolling is not possible on multiple elements. Assuming first element to be meant.");
             // get the first element
             settings.element = settings.element.first();
+        }
+        // filter for no element
+        if ( settings.element.length == 0 )
+        {
+          _internals.debugIf(settings.debug, "Scrolling must have an element.");
+          return this;
         }
         
         // checks whether the element is visible
