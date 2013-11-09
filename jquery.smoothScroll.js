@@ -1,4 +1,4 @@
-/* 
+/*! 
  * Predefined - jquery.smoothScroll.js
  * Copyright (c) 2013 Predefined
  * */
