@@ -71,6 +71,12 @@
             // get the first element
             settings.element = settings.element.first();
         }
+        // filter for no element
+        if ( settings.element.length == 0 )
+        {
+          _internals.debugIf(settings.debug, "Scrolling must have an element.");
+          return this;
+        }
         
         // checks whether the element is visible
         if ( settings.element.css('display') == "none" || settings.element.css('opacity') == "0" )
