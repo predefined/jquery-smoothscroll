@@ -6,17 +6,39 @@
   <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
 </head>
 <body>
-  <div id="page">
-    <div class="page" id="page-1">
-      <h1>Welcome to the jquery-smoothscroll.js test.</h1>
+  <div style="display: none">
+    <div id="page">
+      <div class="page" id="page-1">
+        <h1>Welcome to the jquery-smoothscroll.js test.</h1>
+      </div>
     </div>
   </div>
   
+  <!-- Required for browser reporter -->
+  <div id="mocha"></div>
+  
   <script src="../bower_components/mocha/mocha.js"></script>
+  <script>
+    // This will be overridden by mocha-helper if you run with grunt
+    mocha.setup('bdd');
+  </script>
+  <script>
+    // our own 'assert'
+    function assert(condition, message) {
+      if ( !condition ) {
+        throw message || "Assertion failed";
+      }
+    }
+  </script>
   
   <script src="../bower_components/jquery/jquery.js"></script>
   <script src="../jquery-smoothscroll.js"></script>
   
   <script src="specs/scrolling.js"></script>
+  
+  <script>
+    // run mocha
+    mocha.run();
+  </script>
 </body>
 </html>
