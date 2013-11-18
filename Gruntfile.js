@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     
+    // build:
     uglify: {
       options: {
         report: 'gzip',
@@ -24,11 +25,20 @@ module.exports = function(grunt) {
           'jquery.smoothScroll.min.js': 'jquery.smoothScroll.js'
         }
       }
+    },
+    
+    // test:
+    mocha: {
+      test: {
+        src: [ 'test/*[?.]test.html' ]
+      }
     }
   });
   
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-mocha');
   
   grunt.registerTask('default', 'Create min version.', [ 'uglify' ]);
+  grunt.registerTask('test', 'Test the plugin.', [ 'mocha' ]);
   
 };

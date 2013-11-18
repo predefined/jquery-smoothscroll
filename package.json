@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.1.1",
   "description": "A jQuery plugin for smooth page scrolling.",
-  
   "author": "Predefined <info@predefined.de>",
   "contributors": [
     {
@@ -15,9 +14,9 @@
     "type": "git",
     "url": "https://github.com/predefined/jquery-smoothscroll.git"
   },
-  
   "devDependencies": {
-    "grunt": "0.4.x",
-    "grunt-contrib-uglify": "0.2.x"
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "0.2.x",
+    "grunt-mocha": "~0.4.1"
   }
 }
