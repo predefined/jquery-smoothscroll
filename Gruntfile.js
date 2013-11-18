@@ -28,6 +28,10 @@ module.exports = function(grunt) {
     },
     
     // test:
+    jshint: {
+      lib: [ '*[!min].js', '*.json' ],
+      tests: [ 'test/**/*.js' ]
+    },
     mocha: {
       test: {
         options: {
@@ -38,10 +42,13 @@ module.exports = function(grunt) {
     }
   });
   
+  // build
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  // test
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-mocha');
   
   grunt.registerTask('default', 'Create min version.', [ 'uglify' ]);
-  grunt.registerTask('test', 'Test the plugin.', [ 'mocha' ]);
+  grunt.registerTask('test', 'Test the plugin.', [ 'jshint', 'mocha' ]);
   
 };
