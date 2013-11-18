@@ -2,12 +2,19 @@
 <html>
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" href="../bower_components/mocha/css/mocha.css">
   <title>jquery-smoothscroll.js Test</title>
+  <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
 </head>
 <body>
-  <script src="../bower_components/mocha/css/mocha.js"></script>
+  <div id="page">
+    <div class="page" id="page-1">
+      <h1>Welcome to the jquery-smoothscroll.js test.</h1>
+    </div>
+  </div>
   
+  <script src="../bower_components/mocha/mocha.js"></script>
+  
+  <script src="../bower_components/jquery/jquery.js"></script>
   <script src="../jquery-smoothscroll.js"></script>
   
   <script src="specs/scrolling.js"></script>

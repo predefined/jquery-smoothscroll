@@ -15,7 +15,8 @@
     "test",
     "tests"
   ],
-  "dependencies": {
-    "mocha": "~1.14.0"
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "jquery": "~2.0.3"
   }
 }
