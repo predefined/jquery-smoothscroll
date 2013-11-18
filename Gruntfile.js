@@ -19,10 +19,10 @@ module.exports = function(grunt) {
       
       build: {
         options: {
-          sourceMap: 'jquery.smoothScroll.min.js.map'
+          sourceMap: 'jquery-smoothscroll.min.js.map'
         },
         files: {
-          'jquery.smoothScroll.min.js': 'jquery.smoothScroll.js'
+          'jquery-smoothscroll.min.js': 'jquery-smoothscroll.js'
         }
       }
     },

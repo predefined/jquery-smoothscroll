@@ -6,7 +6,7 @@
     "Sören Gade <gade.soeren@googlemail.com>"
   ],
   "description": "A jQuery plugin for smooth page scrolling.",
-  "main": "jquery.smoothScroll.js",
+  "main": "jquery-smoothscroll.js",
   "private": true,
   "ignore": [
     "**/.*",
