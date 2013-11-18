@@ -37,8 +37,10 @@
   <script src="specs/scrolling.js"></script>
   
   <script>
-    // run mocha
-    mocha.run();
+    // run mocha, if not headless
+    if ( !window.PHANTOMJS ) {
+      mocha.run();
+    }
   </script>
 </body>
 </html>
