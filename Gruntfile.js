@@ -9,6 +9,7 @@ module.exports = function(grunt) {
       options: {
         report: 'gzip',
         mangle: {
+          // we want those!
           except: [ 'jQuery', '$' ]
         },
         
