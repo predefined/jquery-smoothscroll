@@ -72,7 +72,7 @@
             settings.element = settings.element.first();
         }
         // filter for no element
-        if ( settings.element.length == 0 )
+        if ( settings.element.length === 0 )
         {
           _internals.debugIf(settings.debug, "Scrolling must have an element.");
           return this;
@@ -96,7 +96,7 @@
              top = settings.element.position().top;
         
         // add the offset to the top
-        if ( settings.offset != 0 )
+        if ( settings.offset !== 0 )
             top += settings.offset;
         
         _internals.debugIf(settings.debug, "Scrolling to " + top + " (offset: " + settings.offset + ")");
@@ -108,7 +108,7 @@
             // after the settings.duration, output the message
             _internals.debugIf(settings.debug, "Scrolling done.");
             
-            if ( settings.done != null )
+            if ( settings.done !== null )
                 settings.done();
         });
         
