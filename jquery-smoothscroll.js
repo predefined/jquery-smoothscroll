@@ -1,16 +1,15 @@
 /*! 
  * Predefined - jquery.smoothScroll.js
  * Copyright (c) 2013 Predefined
- * */
+ */
 
 /*
  * jQuery Smooth Scroll Plugin
  * By Sören Gade
  * Copyright (c) 2013 Sören Gade
  *
- * Version: 1.1
- * jQuery Version: 1.9.0
- * Last Update: 05 Feb 2012
+ * Version: 1.1.1
+ * Last Update: 19 Nov 2013
  *
  * Usage:
  * $(selector).smoothScrollTop([options]);
@@ -32,11 +31,13 @@
  *          Defaults to false.
  *
  * Version history:
+ *  1.1.1:
+ *    * fixed issues pointed out by jshint
  *  1.1:
- *      + added callback function ('done')
+ *    + added callback function ('done')
  *  1.0:
- *      + Initial release
- * */
+ *    + Initial release
+ */
 
 (function( $ ) {
     var _internals = {
