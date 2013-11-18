@@ -35,6 +35,7 @@ module.exports = function(grunt) {
     mocha: {
       test: {
         options: {
+          reporter: 'Nyan',
           run: true
         },
         src: [ 'test/*test.html' ]
