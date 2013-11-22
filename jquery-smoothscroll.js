@@ -46,7 +46,7 @@
                 this.debug(msg);
         },
         debug: function(msg) {
-            msg = "jQuery.smoothScrollTop: " + msg;
+            msg = "jquery-smoothScrollTop: " + msg;
             console.log(msg);
         }
     };
@@ -100,7 +100,7 @@
         if ( settings.offset !== 0 )
             top += settings.offset;
         
-        _internals.debugIf(settings.debug, "Scrolling to " + top + " (offset: " + settings.offset + ")");
+        _internals.debugIf(settings.debug, "Scrolling to " + top + " (offset: " + settings.offset + ") in " + settings.duration + " ms.");
         
         // animate the parent to scroll to the element
         $(settings.parent).animate({
