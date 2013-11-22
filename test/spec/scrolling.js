@@ -23,5 +23,14 @@ describe('jquery-smoothscroll', function() {
       
     });
     
+    it('should call done callback', function(done) {
+      
+      $("#page").smoothScrollTop({
+        duration: 0,
+        'done': done
+      });
+      
+    });
+    
   });
 });
