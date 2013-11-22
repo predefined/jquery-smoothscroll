@@ -32,14 +32,8 @@ module.exports = function(grunt) {
       lib: [ '*[!min].js', '*.json' ],
       tests: [ 'test/**/*.js' ]
     },
-    mocha: {
-      test: {
-        options: {
-          reporter: 'Nyan',
-          run: true
-        },
-        src: [ 'test/*test.html' ]
-      }
+    qunit: {
+      test: [ 'test/*test.html' ]
     }
   });
   
@@ -47,9 +41,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   // test
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-mocha');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
   
   grunt.registerTask('default', 'Create min version.', [ 'uglify' ]);
-  grunt.registerTask('test', 'Test the plugin.', [ 'jshint', 'mocha' ]);
+  grunt.registerTask('test', 'Test the plugin.', [ 'jshint', 'qunit' ]);
   
 };

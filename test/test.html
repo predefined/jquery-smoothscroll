@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>jquery-smoothscroll.js Test</title>
-  <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
+  <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css">
 </head>
 <body>
   <div style="display: none">
@@ -19,13 +19,10 @@
   </div>
   
   <!-- Required for browser reporter -->
-  <div id="mocha"></div>
+  <div id="qunit"></div>
+
   
-  <script src="../bower_components/mocha/mocha.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" charset="utf-8">
-    // This will be overridden by mocha-helper if you run with grunt
-    mocha.setup('bdd');
-  </script>
+  <script src="../bower_components/qunit/qunit/qunit.js" type="text/javascript" charset="utf-8"></script>
   
   <!-- Assertion library -->
   <script type="text/javascript" charset="utf-8">
@@ -42,12 +39,5 @@
   <script src="../jquery-smoothscroll.js" type="text/javascript" charset="utf-8"></script>
   
   <script src="spec/scrolling.js" type="text/javascript" charset="utf-8"></script>
-  
-  <script type="text/javascript" charset="utf-8">
-    if ( !window.PHANTOMJS ) {
-      // run mocha, if not headless
-      mocha.run();
-    }
-  </script>
 </body>
 </html>
