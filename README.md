@@ -1,4 +1,4 @@
-jquery.smoothScroll.js
+jquery-smoothscroll.js
 ===================
 
 A jQuery plugin for smooth page scrolling.
@@ -44,6 +44,15 @@ General usage:
     $("#textfield").smoothScrollTop({
         duration: 1000
     });
+    
+### Tests
+
+To run the test, execute <code>grunt test</code>.
+JSHint and QUnit will be run.
+
+### Minify
+
+To create the *.min* version as well as the sourcemap, simply run <code>grunt</code>.
 
 ## How it came into being
 When developing our own website we needed a smooth scrolling plugin. None of those we found was actually working. That's why we decided to develop our own jQuery plugin for that.  
