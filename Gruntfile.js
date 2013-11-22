@@ -5,10 +5,12 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     
+    // build:
     uglify: {
       options: {
         report: 'gzip',
         mangle: {
+          // we want those!
           except: [ 'jQuery', '$' ]
         },
         
@@ -17,17 +19,31 @@ module.exports = function(grunt) {
       
       build: {
         options: {
-          sourceMap: 'jquery.smoothScroll.min.js.map'
+          sourceMap: 'jquery-smoothscroll.min.js.map'
         },
         files: {
-          'jquery.smoothScroll.min.js': 'jquery.smoothScroll.js'
+          'jquery-smoothscroll.min.js': 'jquery-smoothscroll.js'
         }
       }
+    },
+    
+    // test:
+    jshint: {
+      lib: [ '*[!min].js', '*.json' ],
+      tests: [ 'test/**/*.js' ]
+    },
+    qunit: {
+      test: [ 'test/*test.html' ]
     }
   });
   
+  // build
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  // test
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
   
   grunt.registerTask('default', 'Create min version.', [ 'uglify' ]);
+  grunt.registerTask('test', 'Test the plugin.', [ 'jshint', 'qunit' ]);
   
 };

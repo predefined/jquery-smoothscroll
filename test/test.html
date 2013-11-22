@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>jquery-smoothscroll.js Test</title>
+  <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css">
+</head>
+<body>
+  <div style="display: none">
+    <div id="page">
+      <div class="page" id="page-1">
+        <h1>Welcome to the jquery-smoothscroll.js test.</h1>
+      </div>
+      
+      <div class="page" id="page-2">
+        <h1>Welcome to the second page!</h1>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Required for browser reporter -->
+  <div id="qunit"></div>
+
+  
+  <script src="../bower_components/qunit/qunit/qunit.js" type="text/javascript" charset="utf-8"></script>
+  
+  <!-- Assertion library -->
+  <script type="text/javascript" charset="utf-8">
+    // our own 'assert'
+    function assert(condition, message) {
+      if ( !condition ) {
+        var errorMsg = message || 'Assertion failed.';
+        throw new Error(errorMsg);
+      }
+    }
+  </script>
+  
+  <script src="../bower_components/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../jquery-smoothscroll.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="spec/scrolling.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

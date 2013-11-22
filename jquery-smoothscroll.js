@@ -1,16 +1,15 @@
 /*! 
  * Predefined - jquery.smoothScroll.js
  * Copyright (c) 2013 Predefined
- * */
+ */
 
 /*
  * jQuery Smooth Scroll Plugin
  * By Sören Gade
  * Copyright (c) 2013 Sören Gade
  *
- * Version: 1.1
- * jQuery Version: 1.9.0
- * Last Update: 05 Feb 2012
+ * Version: 1.1.1
+ * Last Update: 22 Nov 2013
  *
  * Usage:
  * $(selector).smoothScrollTop([options]);
@@ -32,11 +31,13 @@
  *          Defaults to false.
  *
  * Version history:
+ *  1.1.1:
+ *    * fixed issues pointed out by jshint
  *  1.1:
- *      + added callback function ('done')
+ *    + added callback function ('done')
  *  1.0:
- *      + Initial release
- * */
+ *    + Initial release
+ */
 
 (function( $ ) {
     var _internals = {
@@ -45,7 +46,7 @@
                 this.debug(msg);
         },
         debug: function(msg) {
-            msg = "jQuery.smoothScrollTop: " + msg;
+            msg = "jquery-smoothScrollTop: " + msg;
             console.log(msg);
         }
     };
@@ -72,7 +73,7 @@
             settings.element = settings.element.first();
         }
         // filter for no element
-        if ( settings.element.length == 0 )
+        if ( settings.element.length === 0 )
         {
           _internals.debugIf(settings.debug, "Scrolling must have an element.");
           return this;
@@ -96,10 +97,10 @@
              top = settings.element.position().top;
         
         // add the offset to the top
-        if ( settings.offset != 0 )
+        if ( settings.offset !== 0 )
             top += settings.offset;
         
-        _internals.debugIf(settings.debug, "Scrolling to " + top + " (offset: " + settings.offset + ")");
+        _internals.debugIf(settings.debug, "Scrolling to " + top + " (offset: " + settings.offset + ") in " + settings.duration + " ms.");
         
         // animate the parent to scroll to the element
         $(settings.parent).animate({
@@ -108,7 +109,7 @@
             // after the settings.duration, output the message
             _internals.debugIf(settings.debug, "Scrolling done.");
             
-            if ( settings.done != null )
+            if ( settings.done !== null )
                 settings.done();
         });
         
