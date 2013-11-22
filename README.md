@@ -45,12 +45,12 @@ General usage:
         duration: 1000
     });
     
-### Tests
+## Tests
 
 To run the test, execute <code>grunt test</code>.
 JSHint and QUnit will be run.
 
-### Minify
+## Minify
 
 To create the *.min* version as well as the sourcemap, simply run <code>grunt</code>.
 
