@@ -9,7 +9,7 @@
  * Copyright (c) 2013 Sören Gade
  *
  * Version: 1.1.1
- * Last Update: 19 Nov 2013
+ * Last Update: 22 Nov 2013
  *
  * Usage:
  * $(selector).smoothScrollTop([options]);
