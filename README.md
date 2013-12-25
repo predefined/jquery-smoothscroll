@@ -4,6 +4,7 @@ jquery-smoothscroll.js
 A jQuery plugin for smooth page scrolling.
 
 [![Bower version](https://badge.fury.io/bo/jquery-smoothscroll.png)](http://badge.fury.io/bo/jquery-smoothscroll)
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 ## What it does
 SmoothScroll introduces the <code>smoothScrollTop</code> function that makes the browser smoothly scroll to the specified element.
